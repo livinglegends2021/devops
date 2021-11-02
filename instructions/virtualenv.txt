@@ -1,0 +1,6 @@
+--------------------------------------
+python -m virtualenv project
+.\project\Scripts\activate
+--------------------------------------
+pip install -r requirements.txt
+--------------------------------------
