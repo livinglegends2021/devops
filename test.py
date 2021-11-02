@@ -8,4 +8,4 @@ def test1():
 
 def test2():
     response = app.test_client().get("/")
-    assert b"World" in response.data 
+    assert b"Wyorld" in response.data 
