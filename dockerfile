@@ -2,8 +2,10 @@ FROM python
 COPY . /app
 WORKDIR /app 
 RUN pip install -r requirements.txt 
+ENTRYPOINT [ "python" ]
 
-EXPOSE 5000
-CMD ["python","app.py"]
+CMD [ "app.py" ]
+# EXPOSE 5000
+# CMD ["python","app.py"]
 
 # docker run --rm -p 80:5000 livinglegends/devopswithpython:latest
